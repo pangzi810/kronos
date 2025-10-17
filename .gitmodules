@@ -1,0 +1,6 @@
+[submodule "kronos-be"]
+	path = kronos-be
+	url = https://github.com/pangzi810/kronos-be.git
+[submodule "kronos-fe"]
+	path = kronos-fe
+	url = https://github.com/pangzi810/kronos-fe.git
