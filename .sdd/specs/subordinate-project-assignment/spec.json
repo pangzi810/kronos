@@ -1,0 +1,23 @@
+{
+  "feature_name": "subordinate-project-assignment",
+  "project_description": "部下の一覧からプロジェクトをアサインする機能を提供したいです。UIはアサインメント画面のプロジェクト一覧と合わせてください。",
+  "created_at": "2025-01-16T00:00:00Z",
+  "updated_at": "2025-08-16T18:45:00Z",
+  "language": "japanese",
+  "phase": "implementing",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "ready_for_implementation": true
+}

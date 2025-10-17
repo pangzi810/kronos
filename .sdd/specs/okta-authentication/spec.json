@@ -1,0 +1,23 @@
+{
+  "feature_name": "okta-authentication",
+  "project_description": "Okta認証を導入したい",
+  "created_at": "2025-08-26T09:00:00Z",
+  "updated_at": "2025-08-26T07:04:42Z",
+  "language": "japanese",
+  "phase": "implementing",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "ready_for_implementation": true
+}

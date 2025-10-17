@@ -1,0 +1,23 @@
+{
+  "feature_name": "work-hours-input-status",
+  "project_description": "開発者が工数入力画面で自身の工数未入力の日付を確認する機能を提供したい\nそうすることで、開発者が入力漏れに気づける様になり、上長が入力を促す必要がなくなる。\n- 期間は月初から当日まで\n- 月初から当日までの日付を表示し、未入力は赤色、承認待ちは緑色、承認済みは灰色にしてください\n- 日付を選択すると、その日の工数入力が行える様にしてください",
+  "created_at": "2025-01-14T00:00:00Z",
+  "updated_at": "2025-01-14T14:00:00Z",
+  "language": "japanese",
+  "phase": "design-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": false
+    },
+    "tasks": {
+      "generated": false,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": false
+}

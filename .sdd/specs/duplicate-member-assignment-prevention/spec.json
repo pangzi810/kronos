@@ -1,0 +1,23 @@
+{
+  "feature_name": "duplicate-member-assignment-prevention",
+  "project_description": "bugfix-prohibited-to-assign-same-member",
+  "created_at": "2025-08-11T16:35:00Z",
+  "updated_at": "2025-08-11T18:00:00Z",
+  "language": "japanese", 
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": false
+}

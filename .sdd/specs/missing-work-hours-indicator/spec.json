@@ -1,0 +1,27 @@
+{
+  "name": "missing-work-hours-indicator",
+  "description": "Display missing work hour entries from month start to current date with visual indicators for efficient data entry",
+  "language": "ja",
+  "created_at": "2025-01-19T10:00:00Z",
+  "updated_at": "2025-01-19T11:00:00Z",
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "metadata": {
+    "priority": "high",
+    "target_release": "v1.1.0",
+    "estimated_days": 16
+  }
+}

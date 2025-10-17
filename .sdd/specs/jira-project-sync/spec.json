@@ -1,0 +1,23 @@
+{
+  "feature_name": "jira-project-sync",
+  "project_description": "JIRAのAPIを利用し、プロジェクト情報を更新する機能をつくりたい。取得対象のJQLクエリを複数登録しておき１時間置きに取得したい。",
+  "created_at": "2025-01-20T10:00:00Z",
+  "updated_at": "2025-01-20T16:00:00Z",
+  "language": "japanese",
+  "phase": "completed",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "ready_for_implementation": true
+}

@@ -1,0 +1,23 @@
+{
+  "feature_name": "user-daily-approval",
+  "project_description": "作業時間ログの承認単位を申請者/日付単位にしたいです。現状は、申請者/案件/日付単位となっています。",
+  "created_at": "2025-01-14T14:20:00Z",
+  "updated_at": "2025-01-14T15:45:00Z",
+  "language": "japanese",
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": false
+}

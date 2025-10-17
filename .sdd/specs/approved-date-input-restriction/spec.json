@@ -1,0 +1,23 @@
+{
+  "feature_name": "approved-date-input-restriction",
+  "project_description": "工数記録画面で承認済みの日付に対して入力をできないようにしたい。入力項目をグレーアウトしたい。",
+  "created_at": "2025-08-15T00:00:00Z",
+  "updated_at": "2025-08-15T02:00:00Z",
+  "language": "japanese",
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": false
+}

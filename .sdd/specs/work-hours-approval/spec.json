@@ -1,0 +1,23 @@
+{
+  "feature_name": "work-hours-approval",
+  "project_description": "入力された工数に承認機能を追加したいです。承認は開発者の上長が行います。",
+  "created_at": "2025-01-12T10:00:00Z",
+  "updated_at": "2025-08-13T05:45:00Z",
+  "language": "japanese",
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": true
+}

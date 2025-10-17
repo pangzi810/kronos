@@ -1,0 +1,23 @@
+{
+  "feature_name": "okta-user-sync",
+  "project_description": "Okta認証でログインした際に、ユーザを登録または更新をしたい。",
+  "created_at": "2025-01-02T15:30:00Z",
+  "updated_at": "2025-01-02T19:30:00Z",
+  "language": "japanese",
+  "phase": "implementing",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": true
+    },
+    "design": {
+      "generated": true,
+      "approved": true
+    },
+    "tasks": {
+      "generated": true,
+      "approved": true
+    }
+  },
+  "ready_for_implementation": true
+}
