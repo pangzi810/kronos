@@ -36,9 +36,12 @@ Development Hour Management Tool (製品開発工数管理ツール) - A compreh
 ### Authentication & Security
 - **Okta SSO Integration**: ✅ **Fully Implemented** - Complete OAuth2/OpenID Connect single sign-on
   - OAuth2 Resource Server configuration for token validation
+  - Unified Okta configuration across all environments (development, staging, production)
+  - Issuer: `https://integrator-7614169.okta.com/oauth2/default`
+  - JWT algorithm auto-detection from JWK Set (RS256, HS256, etc.)
   - Scope-based authorization mapping to application roles
   - Automatic user synchronization from Okta to local database
-  - Secure token validation with Okta issuer
+  - Secure token validation with Okta issuer and audience verification
   - User status management (ACTIVE, INACTIVE, SUSPENDED)
   - Last login tracking for user activity monitoring
   - Password-less authentication (local passwords removed)

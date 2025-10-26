@@ -139,9 +139,10 @@ config/
 resources/
 ├── db/migration/           # Flyway migration scripts (consolidated)
 │   └── V1__init.sql      # Complete schema definition with all tables and initial data
-├── application.properties  # Default configuration
+├── application.properties  # Default configuration with Okta OAuth2 settings
 ├── application-docker.properties
 ├── application-production.properties
+├── .env.development        # Development environment variables (Okta issuer, JWK Set URI, client ID)
 └── logback-spring.xml     # Logging configuration
 ```
 
@@ -261,6 +262,8 @@ src/
 │   └── date.ts            # JST (Japan Standard Time) date utilities
 ├── router/                # Vue Router configuration
 │   └── index.ts
+├── config/                # Application configuration
+│   └── okta.config.ts    # Okta OAuth2 configuration (uses environment variables)
 ├── i18n/                  # Internationalization
 │   ├── index.ts
 │   ├── locales/
@@ -280,10 +283,15 @@ src/
 kronos-fe/
 ├── package.json           # Dependencies and scripts
 ├── tsconfig.json         # TypeScript configuration
-├── vite.config.ts        # Vite build configuration
+├── vite.config.ts        # Vite build configuration with envDir: './tools/environments'
 ├── .eslintrc.js          # ESLint rules
 ├── .prettierrc           # Prettier formatting
-└── playwright.config.ts  # E2E test configuration
+├── playwright.config.ts  # E2E test configuration
+└── tools/
+    └── environments/      # Environment variable files
+        ├── .env.development   # Development environment (Okta issuer, client ID)
+        ├── .env.staging       # Staging environment (Okta issuer, client ID)
+        └── .env.production    # Production environment (Okta issuer, client ID)
 ```
 
 ## Spec-Driven Development (`.sdd/`)

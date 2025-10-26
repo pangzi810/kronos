@@ -20,7 +20,13 @@
 ### Security & Authentication
 - **Authentication**: Okta OAuth2/OpenID Connect SSO (password-less)
 - **OAuth2 Resource Server**: Spring Security OAuth2 Resource Server
-- **Okta Integration**: 
+- **Okta Configuration**:
+  - Issuer: `https://integrator-7614169.okta.com/oauth2/default`
+  - JWK Set URI: `https://integrator-7614169.okta.com/oauth2/default/v1/keys`
+  - Client ID: `0oautxe876E1V68ml697`
+  - Audience: `api://default`
+  - JWT algorithm: Auto-detection from JWK Set (supports RS256, HS256, etc.)
+- **Okta Integration**:
   - OAuth2 token validation with Okta issuer
   - Scope-based authorization for user permissions
   - Automatic user synchronization service (OktaUserSyncService)
@@ -164,10 +170,11 @@ SPRING_DATASOURCE_USERNAME=devhour_user
 SPRING_DATASOURCE_PASSWORD=devhour_password
 
 # Okta OAuth2 Configuration (Primary Authentication)
-OKTA_OAUTH2_ISSUER=https://your-domain.okta.com/oauth2/default
-OKTA_OAUTH2_CLIENT_ID=your-okta-client-id
-OKTA_OAUTH2_CLIENT_SECRET=your-okta-client-secret
-OKTA_OAUTH2_AUDIENCES=api://default
+# Using Okta's default custom Authorization Server
+OAUTH2_ISSUER_URI=https://integrator-7614169.okta.com/oauth2/default
+OAUTH2_JWK_SET_URI=https://integrator-7614169.okta.com/oauth2/default/v1/keys
+OAUTH2_CLIENT_ID=0oautxe876E1V68ml697
+OAUTH2_AUDIENCE=api://default
 
 # JIRA Integration
 JIRA_BASE_URL=https://your-domain.atlassian.net
@@ -190,6 +197,11 @@ LOGGING_LEVEL_COM_DEVHOUR=DEBUG
 # API Configuration
 VITE_API_BASE_URL=http://localhost:8080/api
 VITE_APP_TITLE=Development Hour Management
+
+# Okta OAuth2 Configuration
+# All environments use the same issuer and client ID
+VITE_OKTA_ISSUER=https://integrator-7614169.okta.com/oauth2/default
+VITE_OKTA_CLIENT_ID=0oautxe876E1V68ml697
 
 # Feature Flags
 VITE_ENABLE_MOCK_DATA=false
@@ -296,9 +308,12 @@ MYSQL_PASSWORD=devhour_password
 1. User initiates SSO login via Okta authorization endpoint
 2. User authenticates with Okta (redirect flow)
 3. Okta returns authorization code to redirect URI (`/callback`)
-4. Client exchanges code for OAuth2 access token
-5. Client includes Bearer token in Authorization header
-6. Server validates token with Okta issuer
+4. Client exchanges code for OAuth2 access token (JWT format)
+5. Client includes Bearer token in Authorization header for API requests
+6. Server validates JWT token signature using Okta JWK Set
+   - Algorithm auto-detected from JWK Set (RS256, HS256, etc.)
+   - Issuer validation: `https://integrator-7614169.okta.com/oauth2/default`
+   - Audience validation: `api://default` or client ID
 7. Server maps Okta scopes to application permissions
 8. Automatic user synchronization updates/creates user in local database
 9. User status and last login timestamp updated
