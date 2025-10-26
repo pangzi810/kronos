@@ -3,9 +3,9 @@
 ## Root Directory Organization
 
 ```
-sample1/
-├── backend/                    # Spring Boot backend application
-├── frontend/                   # Vue 3 frontend application
+kronos/
+├── kronos-be/                  # Spring Boot backend application
+├── kronos-fe/                  # Vue 3 frontend application
 ├── .sdd/                      # Spec-driven development artifacts
 │   ├── specs/                 # Feature specifications
 │   └── steering/              # Project steering documents
@@ -15,7 +15,7 @@ sample1/
 └── .gitignore                # Version control exclusions
 ```
 
-## Backend Structure (`/backend`)
+## Backend Structure (`/kronos-be`)
 
 ### Source Code Organization (`src/main/java/com/devhour`)
 
@@ -170,7 +170,7 @@ __tests__/
 └── main.test.ts           # Application initialization tests
 ```
 
-## Frontend Structure (`/frontend`)
+## Frontend Structure (`/kronos-fe`)
 
 ### Source Code (`src/`)
 
@@ -277,7 +277,7 @@ src/
 ### Configuration Files
 
 ```
-frontend/
+kronos-fe/
 ├── package.json           # Dependencies and scripts
 ├── tsconfig.json         # TypeScript configuration
 ├── vite.config.ts        # Vite build configuration

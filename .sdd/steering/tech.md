@@ -104,7 +104,7 @@
 ### Backend Development
 ```bash
 # Start backend server
-cd backend
+cd kronos-be
 ./gradlew bootRun
 
 # Run tests with coverage
@@ -122,7 +122,7 @@ cd backend
 ### Frontend Development
 ```bash
 # Install dependencies
-cd frontend
+cd kronos-fe
 npm install
 
 # Development server
